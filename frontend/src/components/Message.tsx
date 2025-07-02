@@ -1,13 +1,8 @@
 import React, { useState } from "react";
-import { Citation } from "../types";
+import { ChatMessage, Citation } from "../types";
 
 interface Props {
-  message: {
-    id: string;
-    role: "user" | "assistant";
-    content: string;
-    citations?: Citation[];
-  };
+  message: ChatMessage;
 }
 
 const Message: React.FC<Props> = ({ message }) => {
