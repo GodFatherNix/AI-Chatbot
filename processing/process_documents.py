@@ -192,6 +192,7 @@ def main() -> None:
                             "chunk": idx,
                             "type": "html",
                             "title": item.get("title", ""),
+                            "text": chunk,
                         }
                     )
             elif "file_url" in item:  # FileItem
@@ -209,6 +210,7 @@ def main() -> None:
                             "source": file_url,
                             "chunk": idx,
                             "type": file_path.suffix.lower().lstrip("."),
+                            "text": chunk,
                         }
                     )
             else:
