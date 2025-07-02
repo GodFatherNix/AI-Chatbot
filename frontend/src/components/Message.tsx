@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import { Citation } from "../types";
 
 interface Props {
   message: {
     id: string;
     role: "user" | "assistant";
     content: string;
-    citations?: { id: string; source?: string }[];
+    citations?: Citation[];
   };
 }
 
@@ -52,7 +53,7 @@ const Message: React.FC<Props> = ({ message }) => {
       </div>
       {showSources && citations && citations.length > 0 && (
         <ul style={{ listStyle: "disc", paddingLeft: 20, marginTop: 4 }}>
-          {citations.map((c) => (
+          {citations.map((c: Citation) => (
             <li key={c.id} style={{ fontSize: 12 }}>
               {c.source || c.id}
             </li>

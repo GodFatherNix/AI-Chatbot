@@ -1,24 +1,19 @@
 import React, { useState, useRef, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Message from "./Message";
+import { ChatMessage, Citation } from "../types";
 
 interface BackendResponse {
   answer: string;
   context: string[];
-  citations: { id: string; source?: string }[];
-}
-
-interface ChatMessage {
-  id: string;
-  role: "user" | "assistant";
-  content: string;
-  citations?: { id: string; source?: string }[];
+  citations: Citation[];
 }
 
 const ChatWindow: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
   const sessionId = useRef<string>(uuidv4());
   const bottomRef = useRef<HTMLDivElement | null>(null);
 
@@ -37,6 +32,7 @@ const ChatWindow: React.FC = () => {
     setInput("");
 
     setLoading(true);
+    setError(null);
     try {
       const res = await fetch("/chat", {
         method: "POST",
@@ -62,6 +58,7 @@ const ChatWindow: React.FC = () => {
       setMessages((prev: ChatMessage[]) => [...prev, assistantMsg]);
     } catch (err) {
       console.error(err);
+      setError((err as Error).message);
       const errorMsg: ChatMessage = {
         id: uuidv4(),
         role: "assistant",
@@ -105,6 +102,9 @@ const ChatWindow: React.FC = () => {
         ))}
         <div ref={bottomRef} />
       </div>
+      {error && (
+        <div style={{ color: "red", padding: "0.25rem 0.75rem" }}>{error}</div>
+      )}
       <div style={{ display: "flex", padding: "0.5rem", borderTop: "1px solid #eee" }}>
         <input
           type="text"
@@ -120,7 +120,7 @@ const ChatWindow: React.FC = () => {
           disabled={loading}
           style={{ marginLeft: "0.5rem" }}
         >
-          {loading ? "..." : "Send"}
+          {loading ? "Sending…" : "Send"}
         </button>
       </div>
     </div>

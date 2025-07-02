@@ -5,21 +5,42 @@ Simple React + TypeScript front-end for interacting with the MOSDAC RAG chatbot 
 ## Prerequisites
 
 * Node.js ≥ 18
+* npm (comes with Node) or pnpm / yarn
 
-## Quick Start
+> The project uses React 18 with the new JSX transform and Vite. Development dependencies include `@types/react`, `@types/react-dom`, and `@types/uuid` to ensure TypeScript type safety.
+
+## Install dependencies
 
 ```bash
 cd frontend
-npm install  # or pnpm install / yarn
+npm install     # installs runtime + dev dependencies
+```
+
+If you are using `pnpm` or `yarn`, replace the command accordingly.
+
+## Development mode
+
+```bash
 npm run dev
 ```
 
-The dev server runs at http://localhost:5173 and proxies API requests (`/chat`) to http://localhost:8000 (configured in `vite.config.ts`). Ensure the backend FastAPI service is running on that port.
+This starts Vite's dev-server at <http://localhost:5173>.  API calls to `/chat` are proxied to the backend running at <http://localhost:8000> (see `vite.config.ts`).  Ensure you have the FastAPI service running first:
 
-## Build for Production
+```bash
+uvicorn service.app:app --reload --port 8000
+```
+
+## Production build
 
 ```bash
 npm run build
 ```
 
-Output will be in `dist/`, which can be served by any static server or integrated into the backend container.
+Static files will be emitted to `dist/`.  You can serve them with any static web server or copy them into a backend container.
+
+---
+
+### Troubleshooting
+
+* **Type errors like "cannot find module 'react/jsx-runtime'"** – make sure you ran `npm install` which installs React's type declarations.
+* **Port conflict on 5173** – change the port in `vite.config.ts`.
