@@ -1,0 +1,123 @@
+# MOSDAC AI Help Bot Configuration
+
+# Application Settings
+app:
+  name: "MOSDAC AI Help Bot"
+  version: "1.0.0"
+  debug: true
+  log_level: "INFO"
+
+# Target Portal Configuration
+portal:
+  base_url: "https://www.mosdac.gov.in"
+  crawl_depth: 3
+  crawl_delay: 1  # seconds between requests
+  respect_robots_txt: true
+  user_agent: "MOSDAC-AI-Bot/1.0"
+  
+  # Key sections to crawl
+  sections:
+    - "/faqs"
+    - "/documentation"
+    - "/products"
+    - "/missions"
+    - "/data-access"
+    - "/tutorials"
+    - "/support"
+
+# Data Processing
+data_processing:
+  batch_size: 32
+  max_text_length: 8192
+  supported_formats: ["html", "pdf", "docx", "xlsx", "txt"]
+  language: "en"
+  
+# Knowledge Graph
+knowledge_graph:
+  entity_types:
+    - "Satellite"
+    - "Mission" 
+    - "Product"
+    - "Service"
+    - "Location"
+    - "Date"
+    - "Organization"
+    - "Technology"
+  
+  relations:
+    - "is_part_of"
+    - "provides"
+    - "located_at"
+    - "operates_on"
+    - "related_to"
+    - "supersedes"
+
+# Model Configuration
+models:
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  llm_model: "microsoft/DialoGPT-medium"
+  intent_classifier: "distilbert-base-uncased"
+  ner_model: "en_core_web_sm"
+  
+  # RAG Configuration
+  rag:
+    chunk_size: 1000
+    chunk_overlap: 200
+    similarity_threshold: 0.7
+    max_retrieved_docs: 5
+
+# Vector Database
+vector_db:
+  type: "faiss"  # or "chromadb"
+  dimension: 384
+  index_type: "HNSW"
+  ef_construction: 200
+  m: 16
+
+# Database
+database:
+  type: "sqlite"
+  path: "data/mosdac_bot.db"
+  echo: false
+
+# API Configuration
+api:
+  host: "0.0.0.0"
+  port: 8000
+  cors_origins: ["*"]
+  rate_limit: "100/minute"
+
+# Frontend
+frontend:
+  streamlit:
+    port: 8501
+    theme: "light"
+  gradio:
+    port: 7860
+    share: false
+
+# Evaluation Metrics
+evaluation:
+  metrics:
+    - "intent_accuracy"
+    - "entity_f1"
+    - "response_bleu"
+    - "response_rouge"
+    - "retrieval_precision"
+    - "retrieval_recall"
+  
+  test_size: 0.2
+  validation_size: 0.1
+
+# Deployment
+deployment:
+  environment: "development"  # development, staging, production
+  docker:
+    image_name: "mosdac-ai-bot"
+    tag: "latest"
+  
+# Geospatial Configuration
+geospatial:
+  coordinate_systems: ["WGS84", "UTM"]
+  spatial_index: true
+  location_extraction: true

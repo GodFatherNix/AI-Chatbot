@@ -1,0 +1,58 @@
+# Core ML/NLP libraries
+torch>=2.0.0
+transformers>=4.30.0
+sentence-transformers>=2.2.2
+spacy>=3.7.0
+nltk>=3.8.1
+scikit-learn>=1.3.0
+
+# RAG and Vector Database
+langchain>=0.1.0
+langchain-community>=0.0.20
+faiss-cpu>=1.7.4
+chromadb>=0.4.0
+llama-index>=0.9.0
+
+# Web scraping and processing
+scrapy>=2.11.0
+beautifulsoup4>=4.12.2
+requests>=2.31.0
+selenium>=4.15.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Knowledge Graph
+networkx>=3.1
+rdflib>=7.0.0
+py2neo>=2021.2.3
+
+# FastAPI backend
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+pydantic>=2.4.0
+
+# Frontend
+streamlit>=1.28.0
+gradio>=4.0.0
+
+# Database
+sqlalchemy>=2.0.0
+sqlite3
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+tqdm>=4.66.0
+logging
+schedule>=1.2.0
+
+# Geospatial support
+geopandas>=0.14.0
+folium>=0.15.0
+shapely>=2.0.0
+
+# Document processing
+pypdf2>=3.0.1
+python-docx>=1.1.0
+openpyxl>=3.1.0
