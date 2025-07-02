@@ -27,6 +27,11 @@ from py2neo import Graph
 import spacy
 import openai
 
+# Import geospatial service
+import sys
+sys.path.append('..')
+from geospatial.geospatial_service import GeospatialService
+
 # ---------------------------------------------------------------------------
 # Init
 # ---------------------------------------------------------------------------
@@ -81,6 +86,9 @@ OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo-0125")
 # Chat memory (very simple in-memory store; for production use Redis)
 session_memory: Dict[str, List[dict]] = {}
 MEMORY_MAX_TURNS = 5
+
+# Initialize geospatial service
+geospatial_service = GeospatialService()
 
 # ---------------------------------------------------------------------------
 # FastAPI models
@@ -209,3 +217,20 @@ async def chat(req: ChatRequest):
     history.append({"role": "assistant", "content": answer})
 
     return ChatResponse(answer=answer, context=context_texts, citations=citations)
+
+@app.get("/geospatial/coverage")
+async def get_mission_coverage():
+    """Get mission coverage as GeoJSON for map visualization."""
+    return geospatial_service.get_mission_coverage_geojson()
+
+@app.post("/geospatial/query_bbox")
+async def query_by_bbox(bbox: List[float], mission: str = None, product_type: str = None):
+    """Query satellite products by bounding box."""
+    results = geospatial_service.query_by_bbox(bbox, mission=mission, product_type=product_type)
+    return {"results": [result.__dict__ for result in results]}
+
+@app.post("/geospatial/query_location")
+async def query_by_location(lat: float, lon: float, mission: str = None):
+    """Query products covering a specific location."""
+    results = geospatial_service.query_by_location(lat, lon, mission=mission)
+    return {"results": [result.__dict__ for result in results]}
