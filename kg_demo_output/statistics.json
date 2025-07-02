@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-07-02T09:02:31.687705",
+  "statistics": {
+    "total_entities": 22,
+    "total_relationships": 27
+  },
+  "entity_breakdown": {
+    "MISSION": 3,
+    "PRODUCT": 7,
+    "FORMAT": 3,
+    "LOCATION": 4,
+    "RESOLUTION": 2,
+    "INSTRUMENT": 3
+  },
+  "relationship_breakdown": {
+    "PRODUCES": 7,
+    "OPERATES_IN": 4,
+    "AVAILABLE_IN": 6,
+    "CARRIES": 3,
+    "MEASURES": 7
+  },
+  "confidence_stats": {
+    "entity_confidence_avg": 0.9113636363636364,
+    "relationship_confidence_avg": 0.9685185185185184,
+    "high_confidence_entities": 19,
+    "high_confidence_relationships": 27
+  }
+}

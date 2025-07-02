@@ -1,0 +1,264 @@
+[
+  {
+    "id": "MISSION_OCEANSAT_2",
+    "name": "OCEANSAT-2",
+    "type": "MISSION",
+    "confidence": 1.0,
+    "properties": {
+      "mission": "OCEANSAT-2",
+      "launch_info": "September 23, 2009",
+      "orbit_info": "Sun-synchronous polar orbit"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/oceansat2"
+    ]
+  },
+  {
+    "id": "PRODUCT_OCEAN_COLOR",
+    "name": "Ocean Color",
+    "type": "PRODUCT",
+    "confidence": 0.95,
+    "properties": {
+      "name": "Ocean Color",
+      "description": "Chlorophyll-a concentration"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/oceansat2"
+    ]
+  },
+  {
+    "id": "PRODUCT_SEA_SURFACE_TEMPERATURE",
+    "name": "Sea Surface Temperature",
+    "type": "PRODUCT",
+    "confidence": 0.95,
+    "properties": {
+      "name": "Sea Surface Temperature",
+      "description": "SST measurements"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/oceansat2"
+    ]
+  },
+  {
+    "id": "FORMAT_HDF",
+    "name": "HDF",
+    "type": "FORMAT",
+    "confidence": 0.8,
+    "properties": {
+      "category": "data_format"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/oceansat2"
+    ]
+  },
+  {
+    "id": "FORMAT_NetCDF",
+    "name": "NetCDF",
+    "type": "FORMAT",
+    "confidence": 0.8,
+    "properties": {
+      "category": "data_format"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/oceansat2"
+    ]
+  },
+  {
+    "id": "LOCATION_INDIAN_OCEAN",
+    "name": "Indian Ocean",
+    "type": "LOCATION",
+    "confidence": 0.9,
+    "properties": {
+      "category": "geographic_region"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/oceansat2"
+    ]
+  },
+  {
+    "id": "LOCATION_ARABIAN_SEA",
+    "name": "Arabian Sea",
+    "type": "LOCATION",
+    "confidence": 0.9,
+    "properties": {
+      "category": "geographic_region"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/oceansat2"
+    ]
+  },
+  {
+    "id": "RESOLUTION_360m",
+    "name": "360m",
+    "type": "RESOLUTION",
+    "confidence": 0.9,
+    "properties": {
+      "category": "spatial_resolution"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/oceansat2"
+    ]
+  },
+  {
+    "id": "MISSION_INSAT_3D",
+    "name": "INSAT-3D",
+    "type": "MISSION",
+    "confidence": 1.0,
+    "properties": {
+      "mission": "INSAT-3D",
+      "launch_info": "July 26, 2013",
+      "orbit_info": "Geostationary orbit"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/insat3d"
+    ]
+  },
+  {
+    "id": "PRODUCT_TEMPERATURE",
+    "name": "Temperature",
+    "type": "PRODUCT",
+    "confidence": 0.9,
+    "properties": {},
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/insat3d"
+    ]
+  },
+  {
+    "id": "PRODUCT_HUMIDITY",
+    "name": "Humidity",
+    "type": "PRODUCT",
+    "confidence": 0.9,
+    "properties": {},
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/insat3d"
+    ]
+  },
+  {
+    "id": "PRODUCT_CLOUD",
+    "name": "Cloud",
+    "type": "PRODUCT",
+    "confidence": 0.9,
+    "properties": {},
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/insat3d"
+    ]
+  },
+  {
+    "id": "LOCATION_INDIAN_SUBCONTINENT",
+    "name": "Indian Subcontinent",
+    "type": "LOCATION",
+    "confidence": 0.9,
+    "properties": {
+      "category": "geographic_region"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/insat3d"
+    ]
+  },
+  {
+    "id": "MISSION_SCATSAT_1",
+    "name": "SCATSAT-1",
+    "type": "MISSION",
+    "confidence": 1.0,
+    "properties": {
+      "mission": "SCATSAT-1",
+      "launch_info": "September 26, 2016",
+      "orbit_info": "Sun-synchronous orbit"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/scatsat1"
+    ]
+  },
+  {
+    "id": "PRODUCT_WIND_SPEED",
+    "name": "Wind Speed",
+    "type": "PRODUCT",
+    "confidence": 0.9,
+    "properties": {},
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/scatsat1"
+    ]
+  },
+  {
+    "id": "PRODUCT_WIND_DIRECTION",
+    "name": "Wind Direction",
+    "type": "PRODUCT",
+    "confidence": 0.9,
+    "properties": {},
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/scatsat1"
+    ]
+  },
+  {
+    "id": "FORMAT_Binary",
+    "name": "Binary",
+    "type": "FORMAT",
+    "confidence": 0.8,
+    "properties": {
+      "category": "data_format"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/scatsat1"
+    ]
+  },
+  {
+    "id": "LOCATION_GLOBAL",
+    "name": "Global",
+    "type": "LOCATION",
+    "confidence": 0.9,
+    "properties": {
+      "category": "geographic_region"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/scatsat1"
+    ]
+  },
+  {
+    "id": "RESOLUTION_25_km",
+    "name": "25 km",
+    "type": "RESOLUTION",
+    "confidence": 0.9,
+    "properties": {
+      "category": "spatial_resolution"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/scatsat1"
+    ]
+  },
+  {
+    "id": "INSTRUMENT_OCEAN_COLOR_MONITOR",
+    "name": "Ocean Color Monitor",
+    "type": "INSTRUMENT",
+    "confidence": 0.95,
+    "properties": {
+      "derived_from": "domain_knowledge"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/oceansat2"
+    ]
+  },
+  {
+    "id": "INSTRUMENT_IMAGER",
+    "name": "Imager",
+    "type": "INSTRUMENT",
+    "confidence": 0.95,
+    "properties": {
+      "derived_from": "domain_knowledge"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/insat3d"
+    ]
+  },
+  {
+    "id": "INSTRUMENT_SCATTEROMETER",
+    "name": "Scatterometer",
+    "type": "INSTRUMENT",
+    "confidence": 0.95,
+    "properties": {
+      "derived_from": "domain_knowledge"
+    },
+    "source_urls": [
+      "https://www.mosdac.gov.in/missions/scatsat1"
+    ]
+  }
+]

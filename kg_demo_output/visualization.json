@@ -1,0 +1,355 @@
+{
+  "nodes": [
+    {
+      "id": "MISSION_OCEANSAT_2",
+      "name": "OCEANSAT-2",
+      "type": "MISSION",
+      "confidence": 1.0,
+      "color": "#FF6B6B"
+    },
+    {
+      "id": "PRODUCT_OCEAN_COLOR",
+      "name": "Ocean Color",
+      "type": "PRODUCT",
+      "confidence": 0.95,
+      "color": "#45B7D1"
+    },
+    {
+      "id": "PRODUCT_SEA_SURFACE_TEMPERATURE",
+      "name": "Sea Surface Temperature",
+      "type": "PRODUCT",
+      "confidence": 0.95,
+      "color": "#45B7D1"
+    },
+    {
+      "id": "FORMAT_HDF",
+      "name": "HDF",
+      "type": "FORMAT",
+      "confidence": 0.8,
+      "color": "#FFEAA7"
+    },
+    {
+      "id": "FORMAT_NetCDF",
+      "name": "NetCDF",
+      "type": "FORMAT",
+      "confidence": 0.8,
+      "color": "#FFEAA7"
+    },
+    {
+      "id": "LOCATION_INDIAN_OCEAN",
+      "name": "Indian Ocean",
+      "type": "LOCATION",
+      "confidence": 0.9,
+      "color": "#96CEB4"
+    },
+    {
+      "id": "LOCATION_ARABIAN_SEA",
+      "name": "Arabian Sea",
+      "type": "LOCATION",
+      "confidence": 0.9,
+      "color": "#96CEB4"
+    },
+    {
+      "id": "RESOLUTION_360m",
+      "name": "360m",
+      "type": "RESOLUTION",
+      "confidence": 0.9,
+      "color": "#DDA0DD"
+    },
+    {
+      "id": "MISSION_INSAT_3D",
+      "name": "INSAT-3D",
+      "type": "MISSION",
+      "confidence": 1.0,
+      "color": "#FF6B6B"
+    },
+    {
+      "id": "PRODUCT_TEMPERATURE",
+      "name": "Temperature",
+      "type": "PRODUCT",
+      "confidence": 0.9,
+      "color": "#45B7D1"
+    },
+    {
+      "id": "PRODUCT_HUMIDITY",
+      "name": "Humidity",
+      "type": "PRODUCT",
+      "confidence": 0.9,
+      "color": "#45B7D1"
+    },
+    {
+      "id": "PRODUCT_CLOUD",
+      "name": "Cloud",
+      "type": "PRODUCT",
+      "confidence": 0.9,
+      "color": "#45B7D1"
+    },
+    {
+      "id": "LOCATION_INDIAN_SUBCONTINENT",
+      "name": "Indian Subcontinent",
+      "type": "LOCATION",
+      "confidence": 0.9,
+      "color": "#96CEB4"
+    },
+    {
+      "id": "MISSION_SCATSAT_1",
+      "name": "SCATSAT-1",
+      "type": "MISSION",
+      "confidence": 1.0,
+      "color": "#FF6B6B"
+    },
+    {
+      "id": "PRODUCT_WIND_SPEED",
+      "name": "Wind Speed",
+      "type": "PRODUCT",
+      "confidence": 0.9,
+      "color": "#45B7D1"
+    },
+    {
+      "id": "PRODUCT_WIND_DIRECTION",
+      "name": "Wind Direction",
+      "type": "PRODUCT",
+      "confidence": 0.9,
+      "color": "#45B7D1"
+    },
+    {
+      "id": "FORMAT_Binary",
+      "name": "Binary",
+      "type": "FORMAT",
+      "confidence": 0.8,
+      "color": "#FFEAA7"
+    },
+    {
+      "id": "LOCATION_GLOBAL",
+      "name": "Global",
+      "type": "LOCATION",
+      "confidence": 0.9,
+      "color": "#96CEB4"
+    },
+    {
+      "id": "RESOLUTION_25_km",
+      "name": "25 km",
+      "type": "RESOLUTION",
+      "confidence": 0.9,
+      "color": "#DDA0DD"
+    },
+    {
+      "id": "INSTRUMENT_OCEAN_COLOR_MONITOR",
+      "name": "Ocean Color Monitor",
+      "type": "INSTRUMENT",
+      "confidence": 0.95,
+      "color": "#4ECDC4"
+    },
+    {
+      "id": "INSTRUMENT_IMAGER",
+      "name": "Imager",
+      "type": "INSTRUMENT",
+      "confidence": 0.95,
+      "color": "#4ECDC4"
+    },
+    {
+      "id": "INSTRUMENT_SCATTEROMETER",
+      "name": "Scatterometer",
+      "type": "INSTRUMENT",
+      "confidence": 0.95,
+      "color": "#4ECDC4"
+    }
+  ],
+  "edges": [
+    {
+      "source": "MISSION_OCEANSAT_2",
+      "target": "PRODUCT_OCEAN_COLOR",
+      "relationship": "PRODUCES",
+      "confidence": 1.0,
+      "color": "#2ECC71"
+    },
+    {
+      "source": "MISSION_OCEANSAT_2",
+      "target": "PRODUCT_SEA_SURFACE_TEMPERATURE",
+      "relationship": "PRODUCES",
+      "confidence": 1.0,
+      "color": "#2ECC71"
+    },
+    {
+      "source": "MISSION_INSAT_3D",
+      "target": "PRODUCT_TEMPERATURE",
+      "relationship": "PRODUCES",
+      "confidence": 1.0,
+      "color": "#2ECC71"
+    },
+    {
+      "source": "MISSION_INSAT_3D",
+      "target": "PRODUCT_HUMIDITY",
+      "relationship": "PRODUCES",
+      "confidence": 1.0,
+      "color": "#2ECC71"
+    },
+    {
+      "source": "MISSION_INSAT_3D",
+      "target": "PRODUCT_CLOUD",
+      "relationship": "PRODUCES",
+      "confidence": 1.0,
+      "color": "#2ECC71"
+    },
+    {
+      "source": "MISSION_SCATSAT_1",
+      "target": "PRODUCT_WIND_SPEED",
+      "relationship": "PRODUCES",
+      "confidence": 1.0,
+      "color": "#2ECC71"
+    },
+    {
+      "source": "MISSION_SCATSAT_1",
+      "target": "PRODUCT_WIND_DIRECTION",
+      "relationship": "PRODUCES",
+      "confidence": 1.0,
+      "color": "#2ECC71"
+    },
+    {
+      "source": "MISSION_OCEANSAT_2",
+      "target": "LOCATION_INDIAN_OCEAN",
+      "relationship": "OPERATES_IN",
+      "confidence": 1.0,
+      "color": "#F39C12"
+    },
+    {
+      "source": "MISSION_OCEANSAT_2",
+      "target": "LOCATION_ARABIAN_SEA",
+      "relationship": "OPERATES_IN",
+      "confidence": 1.0,
+      "color": "#F39C12"
+    },
+    {
+      "source": "MISSION_INSAT_3D",
+      "target": "LOCATION_INDIAN_SUBCONTINENT",
+      "relationship": "OPERATES_IN",
+      "confidence": 1.0,
+      "color": "#F39C12"
+    },
+    {
+      "source": "MISSION_SCATSAT_1",
+      "target": "LOCATION_GLOBAL",
+      "relationship": "OPERATES_IN",
+      "confidence": 1.0,
+      "color": "#F39C12"
+    },
+    {
+      "source": "PRODUCT_OCEAN_COLOR",
+      "target": "FORMAT_HDF",
+      "relationship": "AVAILABLE_IN",
+      "confidence": 1.0,
+      "color": "#9B59B6"
+    },
+    {
+      "source": "PRODUCT_OCEAN_COLOR",
+      "target": "FORMAT_NetCDF",
+      "relationship": "AVAILABLE_IN",
+      "confidence": 1.0,
+      "color": "#9B59B6"
+    },
+    {
+      "source": "PRODUCT_SEA_SURFACE_TEMPERATURE",
+      "target": "FORMAT_HDF",
+      "relationship": "AVAILABLE_IN",
+      "confidence": 1.0,
+      "color": "#9B59B6"
+    },
+    {
+      "source": "PRODUCT_SEA_SURFACE_TEMPERATURE",
+      "target": "FORMAT_NetCDF",
+      "relationship": "AVAILABLE_IN",
+      "confidence": 1.0,
+      "color": "#9B59B6"
+    },
+    {
+      "source": "PRODUCT_WIND_SPEED",
+      "target": "FORMAT_Binary",
+      "relationship": "AVAILABLE_IN",
+      "confidence": 1.0,
+      "color": "#9B59B6"
+    },
+    {
+      "source": "PRODUCT_WIND_DIRECTION",
+      "target": "FORMAT_Binary",
+      "relationship": "AVAILABLE_IN",
+      "confidence": 1.0,
+      "color": "#9B59B6"
+    },
+    {
+      "source": "MISSION_OCEANSAT_2",
+      "target": "INSTRUMENT_OCEAN_COLOR_MONITOR",
+      "relationship": "CARRIES",
+      "confidence": 0.95,
+      "color": "#E74C3C"
+    },
+    {
+      "source": "MISSION_INSAT_3D",
+      "target": "INSTRUMENT_IMAGER",
+      "relationship": "CARRIES",
+      "confidence": 0.95,
+      "color": "#E74C3C"
+    },
+    {
+      "source": "MISSION_SCATSAT_1",
+      "target": "INSTRUMENT_SCATTEROMETER",
+      "relationship": "CARRIES",
+      "confidence": 0.95,
+      "color": "#E74C3C"
+    },
+    {
+      "source": "INSTRUMENT_OCEAN_COLOR_MONITOR",
+      "target": "PRODUCT_OCEAN_COLOR",
+      "relationship": "MEASURES",
+      "confidence": 0.9,
+      "color": "#3498DB"
+    },
+    {
+      "source": "INSTRUMENT_OCEAN_COLOR_MONITOR",
+      "target": "PRODUCT_SEA_SURFACE_TEMPERATURE",
+      "relationship": "MEASURES",
+      "confidence": 0.9,
+      "color": "#3498DB"
+    },
+    {
+      "source": "INSTRUMENT_IMAGER",
+      "target": "PRODUCT_TEMPERATURE",
+      "relationship": "MEASURES",
+      "confidence": 0.9,
+      "color": "#3498DB"
+    },
+    {
+      "source": "INSTRUMENT_IMAGER",
+      "target": "PRODUCT_HUMIDITY",
+      "relationship": "MEASURES",
+      "confidence": 0.9,
+      "color": "#3498DB"
+    },
+    {
+      "source": "INSTRUMENT_IMAGER",
+      "target": "PRODUCT_CLOUD",
+      "relationship": "MEASURES",
+      "confidence": 0.9,
+      "color": "#3498DB"
+    },
+    {
+      "source": "INSTRUMENT_SCATTEROMETER",
+      "target": "PRODUCT_WIND_SPEED",
+      "relationship": "MEASURES",
+      "confidence": 0.9,
+      "color": "#3498DB"
+    },
+    {
+      "source": "INSTRUMENT_SCATTEROMETER",
+      "target": "PRODUCT_WIND_DIRECTION",
+      "relationship": "MEASURES",
+      "confidence": 0.9,
+      "color": "#3498DB"
+    }
+  ],
+  "summary": {
+    "total_nodes": 22,
+    "total_edges": 27,
+    "node_types": 6,
+    "relationship_types": 5
+  }
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "MISSION_OCEANSAT_2_PRODUCES_PRODUCT_OCEAN_COLOR",
+    "source_entity": "MISSION_OCEANSAT_2",
+    "target_entity": "PRODUCT_OCEAN_COLOR",
+    "relationship_type": "PRODUCES",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "MISSION_OCEANSAT_2_PRODUCES_PRODUCT_SEA_SURFACE_TEMPERATURE",
+    "source_entity": "MISSION_OCEANSAT_2",
+    "target_entity": "PRODUCT_SEA_SURFACE_TEMPERATURE",
+    "relationship_type": "PRODUCES",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "MISSION_INSAT_3D_PRODUCES_PRODUCT_TEMPERATURE",
+    "source_entity": "MISSION_INSAT_3D",
+    "target_entity": "PRODUCT_TEMPERATURE",
+    "relationship_type": "PRODUCES",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "MISSION_INSAT_3D_PRODUCES_PRODUCT_HUMIDITY",
+    "source_entity": "MISSION_INSAT_3D",
+    "target_entity": "PRODUCT_HUMIDITY",
+    "relationship_type": "PRODUCES",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "MISSION_INSAT_3D_PRODUCES_PRODUCT_CLOUD",
+    "source_entity": "MISSION_INSAT_3D",
+    "target_entity": "PRODUCT_CLOUD",
+    "relationship_type": "PRODUCES",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "MISSION_SCATSAT_1_PRODUCES_PRODUCT_WIND_SPEED",
+    "source_entity": "MISSION_SCATSAT_1",
+    "target_entity": "PRODUCT_WIND_SPEED",
+    "relationship_type": "PRODUCES",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "MISSION_SCATSAT_1_PRODUCES_PRODUCT_WIND_DIRECTION",
+    "source_entity": "MISSION_SCATSAT_1",
+    "target_entity": "PRODUCT_WIND_DIRECTION",
+    "relationship_type": "PRODUCES",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "MISSION_OCEANSAT_2_OPERATES_IN_LOCATION_INDIAN_OCEAN",
+    "source_entity": "MISSION_OCEANSAT_2",
+    "target_entity": "LOCATION_INDIAN_OCEAN",
+    "relationship_type": "OPERATES_IN",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "MISSION_OCEANSAT_2_OPERATES_IN_LOCATION_ARABIAN_SEA",
+    "source_entity": "MISSION_OCEANSAT_2",
+    "target_entity": "LOCATION_ARABIAN_SEA",
+    "relationship_type": "OPERATES_IN",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "MISSION_INSAT_3D_OPERATES_IN_LOCATION_INDIAN_SUBCONTINENT",
+    "source_entity": "MISSION_INSAT_3D",
+    "target_entity": "LOCATION_INDIAN_SUBCONTINENT",
+    "relationship_type": "OPERATES_IN",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "MISSION_SCATSAT_1_OPERATES_IN_LOCATION_GLOBAL",
+    "source_entity": "MISSION_SCATSAT_1",
+    "target_entity": "LOCATION_GLOBAL",
+    "relationship_type": "OPERATES_IN",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "PRODUCT_OCEAN_COLOR_AVAILABLE_IN_FORMAT_HDF",
+    "source_entity": "PRODUCT_OCEAN_COLOR",
+    "target_entity": "FORMAT_HDF",
+    "relationship_type": "AVAILABLE_IN",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "PRODUCT_OCEAN_COLOR_AVAILABLE_IN_FORMAT_NetCDF",
+    "source_entity": "PRODUCT_OCEAN_COLOR",
+    "target_entity": "FORMAT_NetCDF",
+    "relationship_type": "AVAILABLE_IN",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "PRODUCT_SEA_SURFACE_TEMPERATURE_AVAILABLE_IN_FORMAT_HDF",
+    "source_entity": "PRODUCT_SEA_SURFACE_TEMPERATURE",
+    "target_entity": "FORMAT_HDF",
+    "relationship_type": "AVAILABLE_IN",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "PRODUCT_SEA_SURFACE_TEMPERATURE_AVAILABLE_IN_FORMAT_NetCDF",
+    "source_entity": "PRODUCT_SEA_SURFACE_TEMPERATURE",
+    "target_entity": "FORMAT_NetCDF",
+    "relationship_type": "AVAILABLE_IN",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "PRODUCT_WIND_SPEED_AVAILABLE_IN_FORMAT_Binary",
+    "source_entity": "PRODUCT_WIND_SPEED",
+    "target_entity": "FORMAT_Binary",
+    "relationship_type": "AVAILABLE_IN",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "PRODUCT_WIND_DIRECTION_AVAILABLE_IN_FORMAT_Binary",
+    "source_entity": "PRODUCT_WIND_DIRECTION",
+    "target_entity": "FORMAT_Binary",
+    "relationship_type": "AVAILABLE_IN",
+    "confidence": 1.0,
+    "evidence": [
+      "Co-occurrence in 1 sources"
+    ]
+  },
+  {
+    "id": "MISSION_OCEANSAT_2_CARRIES_INSTRUMENT_OCEAN_COLOR_MONITOR",
+    "source_entity": "MISSION_OCEANSAT_2",
+    "target_entity": "INSTRUMENT_OCEAN_COLOR_MONITOR",
+    "relationship_type": "CARRIES",
+    "confidence": 0.95,
+    "evidence": [
+      "Domain knowledge"
+    ]
+  },
+  {
+    "id": "MISSION_INSAT_3D_CARRIES_INSTRUMENT_IMAGER",
+    "source_entity": "MISSION_INSAT_3D",
+    "target_entity": "INSTRUMENT_IMAGER",
+    "relationship_type": "CARRIES",
+    "confidence": 0.95,
+    "evidence": [
+      "Domain knowledge"
+    ]
+  },
+  {
+    "id": "MISSION_SCATSAT_1_CARRIES_INSTRUMENT_SCATTEROMETER",
+    "source_entity": "MISSION_SCATSAT_1",
+    "target_entity": "INSTRUMENT_SCATTEROMETER",
+    "relationship_type": "CARRIES",
+    "confidence": 0.95,
+    "evidence": [
+      "Domain knowledge"
+    ]
+  },
+  {
+    "id": "INSTRUMENT_OCEAN_COLOR_MONITOR_MEASURES_PRODUCT_OCEAN_COLOR",
+    "source_entity": "INSTRUMENT_OCEAN_COLOR_MONITOR",
+    "target_entity": "PRODUCT_OCEAN_COLOR",
+    "relationship_type": "MEASURES",
+    "confidence": 0.9,
+    "evidence": [
+      "Domain knowledge"
+    ]
+  },
+  {
+    "id": "INSTRUMENT_OCEAN_COLOR_MONITOR_MEASURES_PRODUCT_SEA_SURFACE_TEMPERATURE",
+    "source_entity": "INSTRUMENT_OCEAN_COLOR_MONITOR",
+    "target_entity": "PRODUCT_SEA_SURFACE_TEMPERATURE",
+    "relationship_type": "MEASURES",
+    "confidence": 0.9,
+    "evidence": [
+      "Domain knowledge"
+    ]
+  },
+  {
+    "id": "INSTRUMENT_IMAGER_MEASURES_PRODUCT_TEMPERATURE",
+    "source_entity": "INSTRUMENT_IMAGER",
+    "target_entity": "PRODUCT_TEMPERATURE",
+    "relationship_type": "MEASURES",
+    "confidence": 0.9,
+    "evidence": [
+      "Domain knowledge"
+    ]
+  },
+  {
+    "id": "INSTRUMENT_IMAGER_MEASURES_PRODUCT_HUMIDITY",
+    "source_entity": "INSTRUMENT_IMAGER",
+    "target_entity": "PRODUCT_HUMIDITY",
+    "relationship_type": "MEASURES",
+    "confidence": 0.9,
+    "evidence": [
+      "Domain knowledge"
+    ]
+  },
+  {
+    "id": "INSTRUMENT_IMAGER_MEASURES_PRODUCT_CLOUD",
+    "source_entity": "INSTRUMENT_IMAGER",
+    "target_entity": "PRODUCT_CLOUD",
+    "relationship_type": "MEASURES",
+    "confidence": 0.9,
+    "evidence": [
+      "Domain knowledge"
+    ]
+  },
+  {
+    "id": "INSTRUMENT_SCATTEROMETER_MEASURES_PRODUCT_WIND_SPEED",
+    "source_entity": "INSTRUMENT_SCATTEROMETER",
+    "target_entity": "PRODUCT_WIND_SPEED",
+    "relationship_type": "MEASURES",
+    "confidence": 0.9,
+    "evidence": [
+      "Domain knowledge"
+    ]
+  },
+  {
+    "id": "INSTRUMENT_SCATTEROMETER_MEASURES_PRODUCT_WIND_DIRECTION",
+    "source_entity": "INSTRUMENT_SCATTEROMETER",
+    "target_entity": "PRODUCT_WIND_DIRECTION",
+    "relationship_type": "MEASURES",
+    "confidence": 0.9,
+    "evidence": [
+      "Domain knowledge"
+    ]
+  }
+]
