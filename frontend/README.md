@@ -19,7 +19,7 @@ npm install     # installs runtime + dev dependencies
 If you are using `pnpm` or `yarn`, replace the command accordingly.  The command installs:
 
 * `react` & `react-dom` v18.2 – runtime libraries
-* `@types/react`, `@types/react-dom`, `@types/uuid` – TypeScript typings
+* `@types/react`, `@types/react-dom`, `@types/uuid`, `@types/node` – TypeScript typings for browser & Node
 * `vite` & `@vitejs/plugin-react` – build/dev tooling
 
 > Note: If you previously installed React 18.3 beta, remove `node_modules` and reinstall to avoid mismatched type versions.
