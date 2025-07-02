@@ -1,0 +1,1 @@
+"""MOSDAC web crawler package."""
